@@ -7,3 +7,33 @@ button:hover {
     background-color: cornflowerblue;
     transition: 2s;
 }
+
+/* Bonus Activity */
+
+.caption {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    text-align: center;
+  }
+  
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    transform: translateY(90%);
+    transition: transform .35s ease-out;
+  }
+  .caption:hover .content{
+    transform: translateY(0);
+  }
